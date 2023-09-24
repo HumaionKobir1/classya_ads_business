@@ -11,6 +11,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    opacity: 1;
   }
   
   .parallax::before {
@@ -29,6 +30,7 @@
     top: 25%;
     left: 50%;
     height: 50px;
+    width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white; /* Text color on top of the background */

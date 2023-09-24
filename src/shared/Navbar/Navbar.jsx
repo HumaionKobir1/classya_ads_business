@@ -1,56 +1,28 @@
-import { Link } from "react-router-dom";
-import "./Navbar.css";
-import { useState, useEffect } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
+import Container from "../Container";
+import Logo from "./Logo";
+import MenuDropdown from "./MenuDropDown";
+import NavbarItems from "./NavbarItems";
 
-const Navbar = () => {
-  const [isMobile, setInMobile] = useState(false);
-  const [scrolling, setScrolling] = useState(false);
+const Navber = () => {
+    return (
+        <div className="fixed w-full bg-opacity-50 bg-black text-white z-10 shadow-sm">
+            <div className="py-4 border-b-[1px]">
+                <Container>
+                    <div className="flex flex-row items-center justify-between gap-3">
+                        <Logo></Logo>
+                        <NavbarItems></NavbarItems>
 
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  return (
-    <nav className={`navbar  ${scrolling ? "scrolling" : ""}`}>
-      <h3 className="Logo">Travel Vista</h3>
-      <ul
-        className={isMobile ? "nav-links-mobile" : "nav-links"}
-        onClick={() => setInMobile(false)}
-      >
-        <Link to="/">
-          <li>Home</li>
-        </Link>
-        <Link to="/">
-          <li>About</li>
-        </Link>
-        <Link to="/">
-          <li>Contact</li>
-        </Link>
-        <Link to="/">
-          <li>Sign up</li>
-        </Link>
-      </ul>
-      <button
-        className="mobile-menu-icon"
-        onClick={() => setInMobile(!isMobile)}
-      >
-        {isMobile ? <AiOutlineClose /> : <BiMenuAltRight />}
-      </button>
-    </nav>
-  );
+                        <div className="flex gap-3">
+                        <button className="bg-[#30e3ca] md:block hidden text-white hover:bg-blue-600 px-4 py-2 rounded-md">
+                            + Post an Ad
+                        </button>
+                        <MenuDropdown></MenuDropdown>
+                        </div>
+                    </div>
+                </Container>
+            </div>
+        </div>
+    );
 };
 
-export default Navbar;
+export default Navber;
