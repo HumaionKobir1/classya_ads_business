@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "img": "https://preview.colorlib.com/theme/classyads/images/img_1.jpg.webp",
+      "category": "Card & Vehicles",
+      "title": "Red Luxary car",
+      "location": "Don St, Broklyn, New York",
+      "review_number": 4
+    },
+    {
+      "id": 2,
+      "img": "https://preview.colorlib.com/theme/classyads/images/img_2.jpg.webp",
+      "category": "Real State",
+      "title": "Hous with Swimming pool",
+      "location": "Don St, Broklyn, New York",
+      "review_number": 3
+    },
+    {
+      "id": 3,
+      "img": "https://preview.colorlib.com/theme/classyads/images/img_3.jpg.webp",
+      "category": "Ferniture",
+      "title": "Wooden Chair & Table",
+      "location": "Don St, Broklyn, New York",
+      "review_number": 5
+    },
+    {
+      "id": 4,
+      "img": "https://preview.colorlib.com/theme/classyads/images/img_4.jpg.webp",
+      "category": "Electronics",
+      "title": "iPhone X gray",
+      "location": "Don St, Broklyn, New York",
+      "review_number": 2
+    },
+    {
+        "id": 5,
+        "img": "https://preview.colorlib.com/theme/classyads/images/img_1.jpg.webp",
+        "category": "Card & Vehicles",
+        "title": "Red Luxary car",
+        "location": "Don St, Broklyn, New York",
+        "review_number": 4
+      },
+      {
+        "id": 6,
+        "img": "https://preview.colorlib.com/theme/classyads/images/img_2.jpg.webp",
+        "category": "Real State",
+        "title": "Hous with Swimming pool",
+        "location": "Don St, Broklyn, New York",
+        "review_number": 3
+      },
+      {
+        "id": 7,
+        "img": "https://preview.colorlib.com/theme/classyads/images/img_3.jpg.webp",
+        "category": "Ferniture",
+        "title": "Wooden Chair & Table",
+        "location": "Don St, Broklyn, New York",
+        "review_number": 5
+      },
+      {
+        "id": 8,
+        "img": "https://preview.colorlib.com/theme/classyads/images/img_4.jpg.webp",
+        "category": "Electronics",
+        "title": "iPhone X gray",
+        "location": "Don St, Broklyn, New York",
+        "review_number": 2
+      }
+  ]
+  
