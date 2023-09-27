@@ -13,7 +13,7 @@ const Navber = () => {
                         <NavbarItems></NavbarItems>
 
                         <div className="flex gap-3">
-                        <button className="bg-[#30e3ca] md:block hidden text-white hover:bg-blue-600 px-4 py-2 rounded-md">
+                        <button className="bg-[#30e3ca] md:block hidden text-white hover:bg-[#43a699] px-4 py-2 rounded-md">
                             + Post an Ad
                         </button>
                         <MenuDropdown></MenuDropdown>

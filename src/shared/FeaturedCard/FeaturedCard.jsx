@@ -1,4 +1,6 @@
 import { BsFillSuitHeartFill } from "react-icons/bs";
+import Rating from "react-rating";
+import { FaRegStar, FaStar } from 'react-icons/fa';
 
 const FeaturedCard = ({items}) => {
     const {img, category, title, location, review_number} = items;
@@ -17,7 +19,16 @@ const FeaturedCard = ({items}) => {
                     </div>
                     <h2 className='text-base font-normal text-[#30e3ca] mt-5'>{title}</h2>
                     <p>{location}</p>
-                <h4 className='mt-2'>{review_number}</h4>
+                    <div className='flex text-center gap-1 mt-2'>
+                
+                    <Rating
+                    placeholderRating={review_number}
+                    emptySymbol={<FaRegStar></FaRegStar>}
+                    placeholderSymbol={<FaStar className='text-yellow-500'></FaStar>}
+                    fullSymbol={<FaStar></FaStar>}
+                    />
+                        <span>{review_number}</span>
+                    </div>
             </div>
         </div>
     );
