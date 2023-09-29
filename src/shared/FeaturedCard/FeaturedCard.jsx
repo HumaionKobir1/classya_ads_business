@@ -6,7 +6,7 @@ const FeaturedCard = ({items}) => {
     const {img, category, title, location, review_number} = items;
     console.log(items)
     return(
-        <div className='bg-white md:w-64 xl:w-64 w-full rounded-lg shadow-md'>
+        <div className='bg-white md:w-64 xl:w-62 w-full rounded-lg shadow-md'>
             <img className='rounded-t-lg h-44 w-full' src={img} alt="" />
             <div className='p-3'>
                     <div className='flex justify-between items-center'>
@@ -27,7 +27,7 @@ const FeaturedCard = ({items}) => {
                     placeholderSymbol={<FaStar className='text-yellow-500'></FaStar>}
                     fullSymbol={<FaStar></FaStar>}
                     />
-                        <span>{review_number}</span>
+                        <span>({review_number} review)</span>
                     </div>
             </div>
         </div>

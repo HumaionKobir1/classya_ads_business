@@ -34,11 +34,11 @@ const FeaturedAds = () => {
       }, [])
 
     return(
-        <div className='w-3/4 mx-auto mt-16'>
+        <div className='md:w-3/4 w-full p-2 mx-auto mt-16'>
             <h1 className='text-xl'>Featured Ads</h1>
 
-            <div className='mt-7 px-2'>
-                <Carousel responsive={responsive}>
+            <div className='mt-7 md:px-2 gap-1'>
+                <Carousel className='py-2' responsive={responsive}>
                     {
                         carouselData.map(items => <FeaturedCard
                             key={items.id}
