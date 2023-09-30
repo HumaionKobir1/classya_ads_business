@@ -1,5 +1,5 @@
 import SearchAds from '../../components/SearchAds/SearchAds';
-import './subHome.css'
+import './SubHome.css'
 
 const SubHome = () => {
     return (
