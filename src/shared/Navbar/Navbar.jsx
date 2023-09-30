@@ -1,6 +1,6 @@
 import Container from "../Container";
 import Logo from "./Logo";
-import MenuDropdown from "./MenuDropDown";
+import MenuDropdown from "./MenuDropdown";
 import NavbarItems from "./NavbarItems";
 
 const Navber = () => {
